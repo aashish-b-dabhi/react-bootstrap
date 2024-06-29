@@ -1,0 +1,488 @@
+/*========================== variables ==========================*/
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --btn-color: #fa6400;
+  --p-color: #333333;
+}
+
+/*========================== common-css ==========================*/
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1208px;
+  --bs-gutter-x: 20px;
+}
+
+.row {
+  --bs-gutter-x: 20px;
+}
+
+::selection {
+  background-color: #3367d1;
+  color: var(--white-color);
+}
+
+/*========================== commponet  ==========================*/
+
+.heading p {
+  font-size: 14px;
+  color: var(--p-color);
+  text-transform: uppercase;
+}
+
+.heading h1 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.cstm-btn {
+  padding: 9px 25px;
+  border: 1px solid var(--black-color);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  background-color: var(--white-color);
+  transition: all 0.3s;
+}
+
+.cstm-btn:hover {
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.cstm-btn-2 {
+  padding: 12px 32px;
+  color: var(--black-color);
+  background-color: var(--btn-color);
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  text-transform: capitalize;
+}
+
+.cstm-btn-2:hover {
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+/*========================== header ==========================*/
+
+.navbar {
+  padding: 14px 0;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black-color);
+  transition: all 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: var(--btn-color);
+}
+
+
+/*========================== banner ==========================*/
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(https://assets-global.website-files.com/64d0e3bd7c26d4d9227f6c99/64ddfb8ed41b22285ab47f92_hero-image.jpg);
+  background-size: cover;
+  padding: 0 0 117px;
+  margin-bottom: 150px;
+  height: 100vh;
+  background-position: 50%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.banner-data h1 {
+  font-size: 100px;
+  color: var(--white-color);
+  font-weight: 900;
+  line-height: 100%;
+  padding-bottom: 10px;
+}
+
+.banner-data p {
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--white-color);
+}
+
+.banner .banner-card {
+  background-color: var(--white-color);
+  padding: 20px 35px;
+}
+
+.banner .banner-card p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.banner .banner-card {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  align-items: center;
+}
+
+/*========================== FUTURES ==========================*/
+
+
+.future {
+  padding-bottom: 150px;
+}
+
+.future .heading {
+  padding-bottom: 30px;
+}
+
+.future .future-data p {
+  font-weight: 300;
+  line-height: 24px;
+  color: var(--p-color);
+}
+
+.future .future-middle-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--black-color);
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.f-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/*========================== Services ==========================*/
+
+.Services {
+  padding-bottom: 150px;
+}
+
+.Services .service-data {
+  margin: 0 0 40px;
+}
+
+.Services .service-card {
+  padding: 40px 30px 25px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  transition: all 0.3s;
+
+}
+
+.Services .service-card:hover {
+  border: 1px solid var(--black-color);
+}
+
+.Services .service-card .card-body h2 {
+  font-size: 18px;
+  padding-top: 40px;
+  color: var(--black-color);
+
+}
+
+.Services .service-card .card-body p {
+  font-weight: 300;
+  color: var(--p-color);
+  padding-top: 5px;
+  line-height: 24px;
+}
+
+/*========================== KEY POINTS ==========================*/
+
+.point {
+  background-image: url(https://assets-global.website-files.com/64d0e3bd7c26d4d9227f6c99/64d3240542c19884751905a0_why-choose-us-section.jpg);
+  background-size: cover;
+  padding: 80px 80px;
+  margin-bottom: 150px;
+
+}
+
+.point .point-data {
+  padding-top: 35px;
+}
+
+.point .point-data p {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 0 0 10px;
+}
+
+/*========================== OUR KEY ==========================*/
+
+.key {
+  margin-bottom: 150px;
+}
+
+.key .key-data span {
+  color: var(--p-color);
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.key .card {
+  margin-bottom: 20px;
+}
+
+.key .key-card {
+  padding: 40px;
+
+}
+
+.key .key-card h2 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.key .key-card p {
+  font-size: 14px;
+  color: var(--p-color);
+
+}
+
+/*========================== WORK ==========================*/
+
+.work {
+  background-color: var(--black-color);
+  margin-bottom: 150px;
+  padding: 80px 0;
+}
+
+.work .work-data {
+  padding-bottom: 40px;
+}
+
+.work .work-data p {
+  color: var(--white-color);
+}
+
+.work .work-data h1 {
+  color: var(--white-color);
+}
+
+.work .work-data img {
+  filter: invert(1);
+}
+
+.work .work-data .work-btn a {
+  padding: 12px 32px;
+  color: var(--black-color);
+  background-color: var(--btn-color);
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  text-transform: capitalize;
+}
+
+.work .work-data .work-btn a:hover {
+  color: var(--black-color);
+  background-color: var(--white-color);
+}
+
+.work .work-card {
+  padding-bottom: 32px;
+  padding-left: 10px;
+}
+
+.work .work-card .work-img {
+  overflow: hidden;
+}
+
+.work .work-card .work-img img {
+  transition: all 0.5s;
+}
+
+.work .work-card .work-img img:hover {
+  transform: scale(1.05);
+}
+
+.work .work-card span {
+  bottom: 20px;
+  right: 20px;
+  border: 1px solid var(--white-color);
+  padding: 4px 16px;
+  border-radius: 40px;
+  color: var(--white-color);
+  backdrop-filter: blur(2px);
+
+}
+
+.work .work-card h3 {
+  color: var(--white-color);
+  font-size: 18px;
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+
+/*========================== testimonial ==========================*/
+
+
+.testimonial {
+  margin-bottom: 150px;
+}
+
+.testimonial .left,
+.right {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.testimonial .left:hover,
+.right:hover {
+  border: 1px solid var(--black-color) !important;
+}
+
+.testimonial .testimonial-card {
+  border: 1px solid rgba(0, 0, 0, .1);
+  padding: 31px;
+  margin-top: 35px;
+}
+
+.testimonial .testimonial-card .testimonial-img img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.testimonial .testimonial-card .card-data p {
+  font-size: 20px;
+  padding-bottom: 60px;
+  padding-top: 30px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.testimonial .testimonial-card .card-data h5 {
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 2px;
+}
+
+.testimonial .testimonial-card .card-data span {
+  font-size: 12px;
+  color: var(--p-color);
+}
+
+
+/*========================== BLOG ==========================*/
+
+
+.blog {
+  margin-bottom: 150px;
+}
+
+.blog .heading {
+  padding-bottom: 40px;
+}
+
+.blog .blog-card p {
+  color: var(--p-color);
+  font-weight: 300;
+}
+
+.blog .blog-card h4 {
+  padding-left: 32px;
+  font-weight: 300;
+  line-height: 36px;
+  color: var(--black-color);
+}
+
+.blog .blog-card .blog-img {
+  overflow: hidden;
+}
+
+.blog .blog-card .blog-img img {
+  transition: all 0.5s;
+}
+
+.blog .blog-card .blog-img img:hover {
+  transform: scale(1.05);
+}
+
+.blog .blog-card span {
+  color: var(--black-color);
+  font-size: 14px;
+}
+
+.blog .blog-line {
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+
+
+/*========================== footer ==========================*/
+
+
+
+footer {
+  background-color: var(--black-color);
+}
+
+footer .footer-data {
+  padding: 80px 0 20px;
+}
+
+footer li {
+  list-style: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+footer li a {
+  color: var(--white-color);
+  transition: all 0.5s;
+  font-weight: 500;
+}
+
+footer li a:hover {
+  color: var(--btn-color);
+}
+
+footer .f-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, .1);
+  margin: 20px 0 20px;
+}
+
+footer .line-data p {
+  color: var(--white-color);
+  font-size: 14px;
+}
+
+footer .line-data p a {
+  color: var(--white-color);
+  text-decoration: underline;
+  transition: all 0.5s;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+footer .line-data p a:hover {
+  text-decoration: none;
+}
